@@ -1,82 +1,59 @@
-<h1>Active Directory Basics - Identity & Access Management Lab </h1>
+<h1>System Performance Monitoring & Diagnostics</h1>
 
 
 <h2>Description</h2>
-This lab demonstrates foundational identity and access management skills using Microsoft Active Directory in a simulated enterprise environment. A Windows Server domain controller was deployed in VMware Fusion on macOS and configured to manage users, groups, authentication, and access workflows commonly handled by IT Helpdesk and IAM teams.
+Performed system performance monitoring and diagnostics on a Windows 10 workstation using Resource Monitor, Performance Monitor, and Reliability Monitor. Collected real-time performance data, analyzed system resource usage, and generated reports to evaluate CPU, memory, and disk activity.
 <br />
 
 
 <h2>Environments Used </h2>
 
-- <b>macOS host (VMware Fusion)
-- Windows Server 2019 (Domain Controller VM)
-- Active Directory Domain Services
-- Active Directory Users and Computers
-- Windows 10/11 domain-joined client VM</b>
+- <b>Windows 10 </b>
 
 <h2>Key Tasks Performed</h2>
 
-Created a custom Windows Server VM in VMware Fusion and installed Windows Server
+Monitored real-time CPU and memory usage using Resource Monitor
 
-Installed and configured Active Directory Domain Services and promoted the server to a domain controller
+Identified active processes generating system load (msedge.exe)
 
-Created Organizational Units (OUs) to structure users and security groups
+Generated and analyzed system performance data using the System Performance Data Collector Set
 
-Created domain user accounts and security groups for role-based access control
+Created a custom Data Collector Set to monitor processor and memory performance counters
 
-Performed password resets and account unlocks using Active Directory Users and Computers
+Collected and analyzed key metrics including % Processor Time and Pages/sec
 
-Modified group memberships to simulate permission changes for different roles
+Investigated system stability using Windows Reliability Monitor
 
 <h2>Skills Demonstrated </h2>
 
-- <b>Identity and Access Management (IAM) fundamentals
-- User and group lifecycle management in Active Directory
-- Password reset and account unlock workflows
-- Role-based access control (RBAC) via security groups
-- Working with virtualized enterprise environments using VMware Fusion</b>
+- <b>System monitoring
+- Performance analysis
+- Windows diagnostics
+- Performance counter analysis
+- Log and report interpretation
+- Basic troubleshooting</b>
 
 <h2>Lab walk-through:</h2>
 
 <p align="center">
-Windows Server domain controller running inside VMware Fusion on macOS.  <br/>
-<img width="80%" height="80%" alt="00-vmware-fusion-dc01" src="https://github.com/user-attachments/assets/d3ecb631-0a6b-4a93-8528-013cddfacc78" />
+Monitored live CPU, memory, disk, and network activity using Windows Resource Monitor. Verified active system processes and observed resource usage patterns while applications were running. <br/>
+<img width="1025" height="825" alt="Screenshot 2026-03-10 at 6 14 28 PM" src="https://github.com/user-attachments/assets/9166355a-8087-4863-b63b-bfd3d58054a0" />
 <br />
 <br />  
-Windows Server configured as a Domain Controller with Active Directory Domain Services. <br/>
-<img width="76%" height="76%" alt="image" src="https://github.com/user-attachments/assets/37d16edd-a523-4ce4-a698-d802b1e1ddeb" />
+Created and started a user-defined Data Collector Set in Performance Monitor to collect processor and memory performance counters for system analysis. <br/>
+<img width="1025" height="825" alt="Screenshot 2026-03-10 at 6 27 30 PM" src="https://github.com/user-attachments/assets/6e7b35d7-13a5-4681-9d02-5ba8d37ec2f4" />
 <br />
 <br />
-Active Directory domain structure using Organizational Units to separate users and groups. <br/>
-<img width="80%" height="80%" alt="image" src="https://github.com/user-attachments/assets/f6576220-dcfa-4732-b748-f68de145bcda" />
+Analyzed the generated System Performance report to review CPU utilization, disk activity, and memory usage collected during the monitoring session. <br/>
+<img width="1025" height="825" alt="Screenshot 2026-03-10 at 6 33 24 PM" src="https://github.com/user-attachments/assets/1149bca7-2003-4eb3-85f6-02e1d87f785f" />
 <br />
 <br />
-Domain user accounts created to represent employees in an enterprise environment.  <br/>
-<img width="80%" height="80%" alt="image" src="https://github.com/user-attachments/assets/caaf5ccb-0457-44a0-863f-d946c590a9b9" />
-<br />
-<br />
-Security groups created to manage role-based access control.  <br/>
-<img width="80%" height="80%" alt="image" src="https://github.com/user-attachments/assets/39d973f9-5e0b-4829-b4c3-d54db6c15918" />
-<br />
-<br />
-User assigned to a security group to inherit role-based permissions. <br/>
-<img width="80%" height="80%" alt="image" src="https://github.com/user-attachments/assets/93aa89d5-a466-4bd4-9ad7-0dfba81a8935" />
-<br />
-<br />
-Password reset performed using Active Directory Users and Computers as part of standard helpdesk workflow. <br/>
- <img width="76%" height="76%" alt="image" src="https://github.com/user-attachments/assets/36708ae2-1c97-4a90-923d-82242819a473" />
-<br />
-<br />
-Account unlock process demonstrated after simulated login lockout.<br/>
-<img width="80%" height="80%" alt="image" src="https://github.com/user-attachments/assets/0bceb84d-e757-4740-8b7a-9ced7b3038df" />
-<br />
-<br />
-Group membership modified to grant or remove access based on role changes.<br/>
-<img width="80%" height="80%" alt="image" src="https://github.com/user-attachments/assets/9068ba9c-8fef-4cc0-9dca-4bd3677f29df" />
-<br />
-<br />
+Reviewed system stability history and verified critical events using Windows Reliability Monitor after simulating a system shutdown failure. <br/>
+<img width="2052" height="1652" alt="image" src="https://github.com/user-attachments/assets/888f38de-9945-44cc-839e-7c10bc51b538" />
 
-
+<br />
+<br />
+ 
 </p>
 
 <!--
